@@ -32,4 +32,4 @@ Tests can be found in `test/test.js`, using Tape + Supertest
 Domain list is loaded from [yzyjim/disposable-email-domain-list](https://github.com/yzyjim/disposable-email-domain-list/)
 
 
-#### MIT License
+## MIT License
