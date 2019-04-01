@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "name": "email-ok",
+  "version": "0.1.0",
+  "description": "API to check if an email is from a disposable email service",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "lint": "prettier-standard 'src/**/*.js' 'test/**/*.js'",
+    "test": "NODE_ENV='test' tape test/test.js",
+    "postinstall": "node download-list.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V3RITAS-UTD/email-ok.git"
+  },
+  "keywords": [
+    "disposable email",
+    "disposable validate",
+    "temporary email"
+  ],
+  "author": "V3RITAS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/V3RITAS-UTD/email-ok/issues"
+  },
+  "homepage": "https://github.com/V3RITAS-UTD/email-ok#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "koa": "^2.7.0",
+    "koa-logger": "^3.2.0",
+    "koa-route": "^3.2.0"
+  },
+  "devDependencies": {
+    "prettier-standard": "^9.1.1",
+    "request": "^2.88.0",
+    "supertest": "^4.0.2",
+    "tape": "^4.10.1"
+  }
+}
