@@ -21,6 +21,12 @@ Quick use: `curl http://localhost:3000/check/test@fast-mail.one` will return `{"
 
 To re-fetch the domain list run `yarn postinstall` or `npm run postinstall` - this can be done via a cronjob every 2 days to keep the domain list updated
 
+---
+
+To enable authentication with header `X-API-Key` you need to clone the `.env.example` to `.env`, change `API_KEY_LIST` and uncomment ./src/app.js#L15-L23
+
+`cp .env.example .env`
+
 ## Test
 
 `yarn test` or `npm run test`
