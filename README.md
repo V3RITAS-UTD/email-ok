@@ -23,7 +23,7 @@ To re-fetch the domain list run `yarn postinstall` or `npm run postinstall` - th
 
 ---
 
-To enable authentication with header `X-API-Key` you need to clone the `.env.example` to `.env`, change `API_KEY_LIST` and uncomment ./src/app.js#L15-L23
+To enable authentication with header `X-API-Key` you need to clone the `.env.example` to `.env`, change `API_KEY_LIST` and uncomment [src/app.js L15-L23](https://github.com/V3RITAS-UTD/email-ok/blob/master/src/app.js#L15-L23)
 
 `cp .env.example .env`
 
