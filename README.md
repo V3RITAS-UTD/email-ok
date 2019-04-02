@@ -15,7 +15,7 @@ This will also download the latest domain list
 
 Endpoint will be available on `localhost:3000/check/:email`
 
-Quick use: `curl http://localhost:3000/check/test@fast-mail.one`
+Quick use: `curl http://localhost:3000/check/test@fast-mail.one` will return `{"disposable": true}`
 
 ---
 

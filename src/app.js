@@ -1,10 +1,12 @@
 const Koa = require('koa')
 const logger = require('koa-logger')
 const route = require('koa-route')
+const cors = require('@koa/cors')
 const checkEmail = require('./check-email.js')
 const PORT = process.env.PORT || 3000
 const app = new Koa()
 app.use(logger()) // attach logger
+app.use(cors()) // enable CORS
 
 // set main endpoint
 app.use(route.get('/check/:email', checkEmail))
