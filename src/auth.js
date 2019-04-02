@@ -5,7 +5,7 @@ module.exports = (ctx, next) => {
   }
   let isKeyAllowed = process.env.API_KEY_LIST.indexOf(key + '') > -1
   if (isKeyAllowed === true) {
-  	// you can keep track of usage here
+    // you can keep track of usage here
     return next()
   }
   return ctx.throw(403)
